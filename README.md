@@ -1,6 +1,6 @@
 # JavaScript Form Field Validator
 
-This project provides a set of **JavaScript validation functions** using **regular expressions (RegEx)** to validate common form input types. All validation logic is encapsulated in a single `Validator` object for simplicity and maintainability.
+This project provides a set of **JavaScript validation functions** using **regular expressions (RegEx)** to validate common form input types. All validation logic is encapsulated in a single `regexValidator` object for simplicity and maintainability.
 
 ## Supported Validations
 
@@ -37,14 +37,14 @@ The following form fields and patterns are validated:
 
 ### 1. Clone or Copy the Code
 
-Include the `Validator` object in your JavaScript project.
+Include the `regexValidator` object in your JavaScript project.
 
 ### 2. Call Validation Functions
 
 Each function returns a boolean (`true` or `false`):
 
 ```javascript
-Validator.isValidEmail("user@example.com");       // true
-Validator.isValidPhone("(123) 456-7890");          // true
-Validator.isValidCurrency("$19.99");              // true
-Validator.isValidURL("http://example.com");       // false (only HTTPS allowed)
+regexValidator.isValidEmail("user@example.com");       // true
+regexValidator.isValidPhone("(123) 456-7890");          // true
+regexValidator.isValidCurrency("$19.99");              // true
+regexValidator.isValidURL("http://example.com");       // false (only HTTPS allowed)
